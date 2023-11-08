@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebStudio</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -40,18 +40,21 @@
                 <a href="tel:+38096111111" class="contact-link">+38096111111</a>
             </li>
         </ul>
-        
+        </div>
     </header>
     <!-- Головна частина -->
     <main class="main-content">
         <!-- Секція герой -->
         <section class="hero">
+            <div class="container">
             <h1 class="main-heading">Ефективні рішення для вашого бізнесу</h1>
             <button class="button" type="button">Замовити послугу</button>
+            </div>
         </section>
         <!-- Наші особливості -->
         <section class="features">
-            <h2 class="features-heading">Наші особливості</h2>
+            <div class="container">
+            <h2 class="features-title">Наші особливості</h2>
             <ul class="features-list">
                 <li class="features-list-item">
                     <h3 class="features-heading">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -70,9 +73,11 @@
                     <p class="features-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
             </ul>
+            </div>
         </section>
         <!-- Чим ми займаємося -->
         <section class="what-we-do">
+            <div class="container">
             <h2 class="what-we-do-heading">Чим ми займаємося</h2>
             <ul class="what-we-do-list">
                 <li class="what-we-do-list-item">
@@ -85,42 +90,56 @@
                     <img class="image" src="./images/ipad.jpg" width="250" alt="ipad">
                 </li>
             </ul>
+            </div>
         </section>
         <!-- Наша команда -->
         <section class="team">
+            <div class="container">
             <h2 class="team-heading">Наша команда</h2>
-            <ul class="list">
-                <li class="team-list-item">
-                    <img class="userpic" src="./images/IGOR.jpg" width="250" alt="">
-                    <p class="text-name">Ігор Дем'яненко</p>
-                    <p class="text">Product Designer</p>
+            <ul class="team-list">
+                <li class="team-item">
+                    <img class="userpic" src="./images/IGOR.jpg" width="250" alt="Ігор Дем'яненко">
+                    <h3 class="team-name">Ігор Дем'яненко</h3>
+                    <p class="team-position">Product Designer</p>
+                </li>
+                <li class="team-item">
+                    <img class="userpic" src="./images/OLGA.jpg" width="250" alt="Ольга Рєпіна">
+                    <h3 class="team-name">Ольга Рєпіна</h3>
+                    <p class="team-position">Frontend Developer</p>
+                </li>
+                <li class="team-item">
+                    <img class="userpic" src="./images/MYKOLA.jpg" width="250" alt="Микола Тарасов">
+                    <h3 class="text-name">Микола Тарасов</h3>
+                    <p class="team-position">Marketing</p>
                 </li>
                 <li class="team-list-item">
-                    <img class="userpic" src="./images/OLGA.jpg" width="250" alt="">
-                    <p class="text-name">Ольга Рєпіна</p>
-                    <p class="text">Frontend Developer</p>
-                </li>
-                <li class="team-list-item">
-                    <img class="userpic" src="./images/MYKOLA.jpg" width="250" alt="">
-                    <p class="text-name">Микола Тарасов</p>
-                    <p class="text">Marketing</p>
-                </li>
-                <li class="team-list-item">
-                    <img class="userpic" src="./images/IGOR.jpg" width="250" alt="">
-                    <p class="text-name">Михайло Єрмаков</p>
-                    <p class="text">UI Designer</p>
+                    <img class="userpic" src="./images/myshaylo.jpg" width="250" alt="Михайло Єрмаков">
+                    <h3 class="team-name">Михайло Єрмаков</h3>
+                    <p class="team-position">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <!-- Футер -->
     <footer class="footer">
-        <a class="link" href="/">WebStudio</a>
+        <div class="container">
+       <a href="/" class="logo">
+                <span class="logo-web">Web</span>
+                <span class="logo-studio">Studio</span>
+            </a>
         <address class="contact-info">
-            <p class="text">м. Київ, пр-т Лесі Українки, 26</p>
-            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="link" href="tel:+38096111111">+38096111111</a>
+            <p class="contact-adress">м. Київ, пр-т Лесі Українки, 26</p>
+             <ul class="contact-menu">
+            <li class="contact-item">
+                <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
+            </li>
+            <li class="contact-item">
+                <a href="tel:+38096111111" class="contact-link">+38096111111</a>
+            </li>
+        </ul>
         </address>
+        </div>
     </footer>
 </body>
 </div>
