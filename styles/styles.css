@@ -1,39 +1,106 @@
-:root {
-    --blue-color:#2196F3;
+*,
+*::after,
+*::before {
+box-sizing: border-box;
+   }
+   
+:root{
+    --product-color:#212121;
+    --mainfoot-color: #757575;
+    --blue-color: #2196F3;
+    --studiocolor: #000;
+    --studiocolor2: #FFFFFF;
+    --backcolor: #2F303A;
+    --imgcolor: #F5F4FA;
 }
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+   }
+
+   ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   }
+
+   a {
+text-decoration: 0;
+   }
+
+   button {
+    border: none;
+   }
 body {
     font-family: "Roboto";
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
 }
+/* Header */
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header-position {
+    display: flex;
+
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
 .container{
     width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid red;
     padding-left: 15px;
     padding-right: 15px;
 
 }
-.features-text {
-    font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-}
+
 .logo {
     font-size: 26px;
     font-weight: 700;
     line-height: 1.38;
-}
+    font-family: Raleway;
+    letter-spacing: 0.78px;
 
+}
+.header-web {
+    color: var(--blue-color); 
+    
+}
+.header-studio {
+color: #000; 
+}
 .menu-list {
     font-size: 14px;
     font-weight: 500;
-    line-height:1.14
+    line-height:1.14;
+    display: flex;
+  margin-left: 93px;
 }
 
+.menu-item + .menu-item {
+    margin-left: 50px;
+}
+.menu-link {
+    color: var(--studiocolor);
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+}
+.menu-link:hover {
+color: var(--blue-color);
+}
+.contact-link {
+    color: var(--mainfoot-color);
+}
+.contact-link:hover {
+color: var(--blue-color);
+}
 .contact-info {
     font-size: 14px;
 font-weight: 400;
@@ -45,8 +112,20 @@ line-height: 24px;
     font-size: 44px;
     font-weight: 900;
     line-height:1.36;
+    width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: var(--studiocolor2);
 }
-
+/* Section-hero */
+.hero {
+    padding-top: 200px;
+  padding-bottom: 200px;
+  background: var(--backcolor);
+  
+}
 
 .button {
     text-align: center;
@@ -54,7 +133,14 @@ line-height: 24px;
     font-weight: 700;
     background-color:var(--blue-color);
     border: none;
+    padding: 10px 32px;
+  color: white;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
+
 
 .text {
     font-size: 14px;
@@ -62,7 +148,32 @@ line-height: 24px;
     line-height: 1.71;
     letter-spacing: 0.42px;
 }
-
+/* Наші особливості */
+.features-text {
+    font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+}
+.features-list{
+display: flex;
+padding-top: 95px;
+padding-bottom: 95px;
+}
+.what-we-do-heading {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.what-we-do-list-item {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+.imgage {
+    margin-left: 30px;
+}
 .team-name {
     text-align: center;
     font-size: 16px;
@@ -87,4 +198,36 @@ line-height: 24px;
 font-style: normal;
 font-weight: 700;
 line-height: normal; 
+}
+.box {
+    display: flex;
+    align-items: baseline;
+}
+.contact-menu {
+    display: flex;
+  align-items: center;
+  margin-left: auto;
+  
+}
+.contact-item + .contact-item {
+    margin-left: 50px;
+}
+
+.footer {
+    background: var(--backcolor);
+}
+.logo-footer {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    font-family: Raleway;
+    letter-spacing: 0.78px;
+
+}
+.footer-web {
+    color: var(--blue-color); 
+    
+}
+.footer-studio {
+color: var(--studiocolor2)
 }
