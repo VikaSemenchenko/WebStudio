@@ -37,6 +37,10 @@ body {
     font-style: normal;
     font-weight: 700;
 }
+img {
+    display: block;
+    max-width: 100%;
+}
 /* Header */
 .header {
     padding-top: 25px;
@@ -46,6 +50,9 @@ body {
 .header-position {
     display: flex;
 
+}
+.team-position {
+    color: #757575
 }
 .navigation {
     display: flex;
@@ -124,7 +131,11 @@ line-height: 24px;
     padding-top: 200px;
   padding-bottom: 200px;
   background: var(--backcolor);
-  
+  background-image: url(/images/Img.png);
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
@@ -160,28 +171,48 @@ display: flex;
 padding-top: 95px;
 padding-bottom: 95px;
 }
+.what-we-do {
+    padding-bottom: 94px;
+}
 .what-we-do-heading {
     display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
+}
+.what-we-do-list {
+    display: flex;
+    column-gap: 30px;
 }
 .what-we-do-list-item {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 94px;
+  flex-basis: calc((100% - 60px) / 3);
 }
-.imgage {
+/* .imgage {
     margin-left: 30px;
-}
+} */
 .team-name {
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.48px;
+    margin-top: 30px;
+  margin-bottom: 10px;
 }
-
+.team-list {
+    display: flex;
+   column-gap: 30px;
+   text-align: center;
+}
+.team-item {
+    flex-basis: calc((100% - 90px) / 4);
+    background-color: #FFFFFF;
+}
+.team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+   background-color: #F5F4FA;
+}
 .list-item-link {
     font-size: 14px;
     font-weight: 500;
@@ -197,7 +228,9 @@ padding-bottom: 95px;
     font-size: 36px;
 font-style: normal;
 font-weight: 700;
-line-height: normal; 
+line-height: normal;
+text-align: center;
+margin-bottom: 50px;
 }
 .box {
     display: flex;
