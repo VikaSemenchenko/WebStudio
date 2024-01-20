@@ -160,16 +160,20 @@ line-height: 24px;
     letter-spacing: 0.42px;
 }
 /* Наші особливості */
+.features {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
 .features-text {
     font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 24px;
 }
+
 .features-list{
 display: flex;
-padding-top: 95px;
-padding-bottom: 95px;
+column-gap: 30px;
 }
 .antena::before  {
     background-image: url(../images/antenna.png);
@@ -193,8 +197,19 @@ padding-bottom: 95px;
     margin-bottom: 30px;
   background-position: center;
 }
-.diagram::before  {
-    background-image: url(../images/diagram\ 1.png);
+.laptop::before  {
+    background-image: url(../images/laptop.png);
+    background-repeat: no-repeat;
+    content: "";
+    width: 100%;
+    height: 120px;
+    display: block;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+  background-position: center;
+}
+.space::before  {
+    background-image: url(../images/astronaut.png);
     background-repeat: no-repeat;
     content: "";
     width: 100%;
