@@ -312,3 +312,7 @@ margin-bottom: 50px;
 .footer-studio {
 color: var(--studiocolor2)
 }
+.contact-adress{
+    font-style: normal;
+    color: #FFFFFF;
+}
