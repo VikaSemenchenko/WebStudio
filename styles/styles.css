@@ -171,6 +171,39 @@ display: flex;
 padding-top: 95px;
 padding-bottom: 95px;
 }
+.antena::before  {
+    background-image: url(../images/antenna.png);
+    background-repeat: no-repeat;
+    content: "";
+    width: 100%;
+    height: 120px;
+    display: block;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+  background-position: center;
+}
+.clock::before  {
+    background-image: url(../images/clock.png);
+    background-repeat: no-repeat;
+    content: "";
+    width: 100%;
+    height: 120px;
+    display: block;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+  background-position: center;
+}
+.diagram::before  {
+    background-image: url(../images/diagram\ 1.png);
+    background-repeat: no-repeat;
+    content: "";
+    width: 100%;
+    height: 120px;
+    display: block;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+  background-position: center;
+}
 .what-we-do {
     padding-bottom: 94px;
 }
