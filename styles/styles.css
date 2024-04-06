@@ -274,37 +274,12 @@ img {
   text-transform: uppercase;
   bottom: 0;
   left: 0;
-  color: var(--mainfoot-color);
+  color: var(--studiocolor2);
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.job-text-2 {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  bottom: 0;
-  left: 0;
-  color: var(--mainfoot-color);
-  width: 370px;
-  height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
-}
-.job-text-3 {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  bottom: 0;
-  left: 0;
-  color: var(--mainfoot-color);
-  width: 370px;
-  height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
-}
+
 
 /* .imgage {
     margin-left: 30px;
@@ -488,4 +463,17 @@ padding-bottom: 94px;
 }
 .footer-social-icon {
   fill: #ffffff;
+}
+/* Модальне вікно */
+.backdrop  {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--mainfoot-color);
+  opacity: 1;
+}
+.backdrop.is-hidden {
+  opacity: 0;
 }

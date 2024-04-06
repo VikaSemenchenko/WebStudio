@@ -57,7 +57,7 @@
         <section class="hero">
             <div class="container">
             <h1 class="main-heading">Ефективні рішення для вашого бізнесу</h1>
-            <button class="button" type="button">Замовити послугу</button>
+            <button class="button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <!--  -->
@@ -100,11 +100,11 @@
                 </li>
                 <li class="what-we-do-list-item">
                     <img class="image" src="./images/laptop.jpg" width="" alt="laptop">
-                    <p class="job-text-2">мобільні додатки</p>
+                    <p class="job-text">мобільні додатки</p>
                 </li>
                 <li class="what-we-do-list-item">
                     <img class="image" src="./images/ipad.jpg" width="" alt="ipad">
-                    <p class="job-text-3">дизайнерські рішення</p>
+                    <p class="job-text">дизайнерські рішення</p>
                 </li>
             </ul>
             </div>
@@ -386,7 +386,45 @@
         </div>
         
     </footer>
+    <!-- Модальне вікно -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close-btn" type="button"  data-modal-close>
+               <svg class="close-icon" width="30" height="30">
+                <use href="./sprite/symbol-defs-modal.svg#icon-close"> 
+                    </use>   
+                    </svg>
 
+            </button>
+            <form action="on">
+                <p>Залиште свої дані, ми вам передзвонимо</p>
+            </form>
+            <label for="name">Ім'я</label>
+            <input type="text" id="name">
+              <svg class="person-icon" width="18" height="18">
+                <use href="./sprite/symbol-defs-modal.svg#icon-person-black"> 
+                    </use>   
+                    </svg>
+                     <label for="phone">Телефон</label>
+            <input type="tel" id="phone">
+              <svg class="person-icon" width="18" height="18">
+                <use href="./sprite/symbol-defs-modal.svg#icon-phone-black"> 
+                    </use>   
+                    </svg> 
+                     <label for="mail">Пошта</label>
+            <input type="email" id="mail">
+              <svg class="person-icon" width="18" height="18">
+                <use href="./sprite/symbol-defs-modal.svg#icon-email-black"> 
+                    </use>   
+                    </svg>  
+                    <label for="coment">Коментар</label>
+                    <textarea name="user-coment" id="coment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+                    <input type="checkbox" id="input-check" >
+                   <label for="input-check">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
+                   <button>Відправити</button>
+        </div>
+    </div>
+<script src="./js/modal.js"></script>
 </body>
 </div>
 </html>
