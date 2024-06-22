@@ -51,6 +51,7 @@ img {
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header-position {
@@ -568,7 +569,7 @@ resize: none;
 .modal-button {
  width: 200px;
 height: 50px;
-border-radius: 5;
+border-radius: 5px;
   border: none;
   width: 200px;
   height: 50px;
@@ -581,4 +582,41 @@ border-radius: 5;
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+.projects {
+  padding-top: 94px;
+}
+.projects-title {
+  display: none;
+
+}
+.filter {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  margin-bottom: 50px;
+}
+.filter__button {
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 162%;
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
+border-radius: 4px;
+padding: 6px 22px;
+}
+.filter__button:hover {
+color: var(--imgcolor);
+background-color: var(--blue-color);
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.gallery__item {
+  flex-basis: calc((100% - 60px) / 3);
+  border: 1px solid #EEEEEE;
 }
